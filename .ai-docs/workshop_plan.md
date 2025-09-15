@@ -12,7 +12,7 @@ By the end, attendees will be able to:
 - Run verification gates (typecheck → lint → test → build) and ship a small PR.
 
 ## Workshop starter repository (clone-and-go)
-- URL: https://github.com/YOURORG/amp-workshop-starter (replace before event)
+- URL: https://github.com/mshnjffr/amp-workshop-starter (replace before event)
 - Purpose: single repo everyone clones in the first 10 minutes; contains bite-sized challenges showcasing Amp features.
 - Structure (suggested):
   - apps/express-api: small Express app with a few routes, tests, and intentional gaps
@@ -143,7 +143,7 @@ Hi all,
 
 Thanks for attending the Amp workshop. Here are the resources we used:
 - Manual: https://ampcode.com/manual
-- Starter repo: https://github.com/YOURORG/amp-workshop-starter
+- Starter repo: https://github.com/mshnjffr/amp-workshop-starter
 - Examples & guides: https://github.com/sourcegraph/amp-examples-and-guides/tree/main/examples
 - Today’s sprint prompts: captured in the workshop thread
 
