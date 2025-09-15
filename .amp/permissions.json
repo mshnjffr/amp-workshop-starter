@@ -1,0 +1,26 @@
+{
+  // Amp permissions policy (JSONC comments allowed)
+  "$schema": "https://ampcode.com/schemas/permissions.json",
+  "version": 1,
+  "defaults": {
+    "network": "ask",          // Prompt before any outbound network
+    "filesystem": "read-only", // Allow read-only by default
+    "shell": "ask"             // Prompt before executing shell commands
+  },
+  "deny": [
+    { "pattern": "rm -rf *", "reason": "Prevent destructive recursive removal" },
+    { "pattern": "rm -rf /", "reason": "Prevent destructive recursive removal" },
+    { "pattern": "sudo rm -rf", "reason": "Prevent destructive removal with sudo" },
+    { "pattern": "docker rm -f", "reason": "Prevent force-removing containers" },
+    { "pattern": "mkfs*", "reason": "Disallow filesystem formatting" },
+    { "pattern": "dd if=* of=/dev/*", "reason": "Block raw device writes" }
+  ],
+  "allowTools": [
+    // Explicitly allow read-only/introspective tools
+    "list_directory",
+    "Read",
+    "glob",
+    "Grep"
+  ],
+  "notes": "This policy is intentionally strict. Elevate per-task with explicit approval."
+}

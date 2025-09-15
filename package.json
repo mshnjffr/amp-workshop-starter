@@ -1,0 +1,17 @@
+{
+  "name": "blackrock-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "typecheck": "echo \"No packages yet to typecheck (workspaces: apps/*)\"",
+    "test": "echo \"No tests yet\" && exit 0",
+    "build": "echo \"No build step yet\"",
+    "format": "echo \"Formatting placeholder (add prettier later)\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
